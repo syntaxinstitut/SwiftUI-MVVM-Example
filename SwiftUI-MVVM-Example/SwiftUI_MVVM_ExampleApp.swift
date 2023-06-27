@@ -12,7 +12,7 @@ struct SwiftUI_MVVM_ExampleApp: App {
     
     var body: some Scene {
         WindowGroup {
-            TasksView()
+            Text("Starter Projekt!")
         }
     }
     
