@@ -6,23 +6,26 @@
 //
 
 import Foundation
+import Combine
 
 class TasksViewModel: ObservableObject {
     
+    var cancellable: AnyCancellable?
+    
     init() {
-        let tasks = [Task(title: "Variablen", isCompleted: true, date: Date()),
-                     Task(title: "Arrays", isCompleted: true, date: Date()),
-                     Task(title: "Set & Dictionaries", isCompleted: true, date: Date()),
-                     Task(title: "If/Else", isCompleted: false),
-                     Task(title: "Structs", isCompleted: false),
-                     Task(title: "Klassen", isCompleted: false)]
+        dataManager.fetchTasks()
         
-        self.taskViewModels = tasks.map { TaskViewModel($0) }
+        cancellable = dataManager.tasks
+            .sink { [weak self] tasks in
+                self?.taskViewModels = tasks.map { TaskViewModel($0) }
+            }
     }
     
     
     
     // MARK: - Variables
+    
+    let dataManager = DataManager.shared
     
     @Published var taskViewModels = [TaskViewModel]()
     

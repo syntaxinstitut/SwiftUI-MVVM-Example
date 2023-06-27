@@ -10,15 +10,13 @@ import SwiftUI
 struct TaskView: View {
     
     var body: some View {
-        HStack {
+        HStack(spacing: 0) {
             Text(taskViewModel.title)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
-            if let date = taskViewModel.date {
-                Text(date, style: .date)
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
-            }
+            Text(taskViewModel.date, style: .date)
+                .font(.subheadline)
+                .foregroundColor(.gray)
         }
     }
     

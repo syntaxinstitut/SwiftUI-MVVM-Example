@@ -12,5 +12,5 @@ struct Task: Codable, Hashable, Identifiable {
     
     var title: String
     var isCompleted: Bool
-    var date: Date?
+    var date: Date
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4480AD712A4B019F00022428 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4480AD702A4B019F00022428 /* AddButton.swift */; };
+		4480AD732A4B0AFF00022428 /* CompletedTasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4480AD722A4B0AFF00022428 /* CompletedTasksView.swift */; };
+		4480AD762A4B0B5100022428 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4480AD752A4B0B5100022428 /* InfoView.swift */; };
+		4480AD792A4B1A7800022428 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4480AD782A4B1A7800022428 /* DataManager.swift */; };
 		4E74574F2A432BF300B94003 /* SwiftUI_MVVM_ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E74574E2A432BF300B94003 /* SwiftUI_MVVM_ExampleApp.swift */; };
 		4E7457512A432BF300B94003 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7457502A432BF300B94003 /* TasksView.swift */; };
 		4E7457532A432BF400B94003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E7457522A432BF400B94003 /* Assets.xcassets */; };
@@ -16,10 +20,13 @@
 		4ED01DBC2A44747300E57B2E /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED01DBB2A44747300E57B2E /* TasksViewModel.swift */; };
 		4ED01DBE2A4474F000E57B2E /* TaskEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED01DBD2A4474F000E57B2E /* TaskEditView.swift */; };
 		4ED01DC02A44750900E57B2E /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED01DBF2A44750900E57B2E /* TaskView.swift */; };
-		4ED01DC52A44759500E57B2E /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED01DC42A44759500E57B2E /* TaskDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4480AD702A4B019F00022428 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		4480AD722A4B0AFF00022428 /* CompletedTasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTasksView.swift; sourceTree = "<group>"; };
+		4480AD752A4B0B5100022428 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		4480AD782A4B1A7800022428 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		4E74574B2A432BF300B94003 /* SwiftUI-MVVM-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-MVVM-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E74574E2A432BF300B94003 /* SwiftUI_MVVM_ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MVVM_ExampleApp.swift; sourceTree = "<group>"; };
 		4E7457502A432BF300B94003 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
@@ -31,7 +38,6 @@
 		4ED01DBB2A44747300E57B2E /* TasksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
 		4ED01DBD2A4474F000E57B2E /* TaskEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditView.swift; sourceTree = "<group>"; };
 		4ED01DBF2A44750900E57B2E /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
-		4ED01DC42A44759500E57B2E /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4480AD6E2A4B017A00022428 /* Completed */ = {
+			isa = PBXGroup;
+			children = (
+				4480AD722A4B0AFF00022428 /* CompletedTasksView.swift */,
+			);
+			path = Completed;
+			sourceTree = "<group>";
+		};
+		4480AD6F2A4B019200022428 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4480AD702A4B019F00022428 /* AddButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4480AD742A4B0B4700022428 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				4480AD752A4B0B5100022428 /* InfoView.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		4480AD772A4B1A6B00022428 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4480AD782A4B1A7800022428 /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		4E7457422A432BF300B94003 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +108,7 @@
 				4E74575E2A432C3000B94003 /* Models */,
 				4E74575F2A432C3400B94003 /* ViewModels */,
 				4E74575D2A432C2800B94003 /* Views */,
+				4480AD772A4B1A6B00022428 /* Managers */,
 				4E7457552A432BF400B94003 /* Preview Content */,
 			);
 			path = "SwiftUI-MVVM-Example";
@@ -87,8 +126,10 @@
 			isa = PBXGroup;
 			children = (
 				4ED01DC12A44750C00E57B2E /* List */,
-				4ED01DC32A44758900E57B2E /* Detail */,
+				4480AD6E2A4B017A00022428 /* Completed */,
 				4ED01DC22A44750F00E57B2E /* Edit */,
+				4480AD742A4B0B4700022428 /* Info */,
+				4480AD6F2A4B019200022428 /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,14 +166,6 @@
 				4ED01DBD2A4474F000E57B2E /* TaskEditView.swift */,
 			);
 			path = Edit;
-			sourceTree = "<group>";
-		};
-		4ED01DC32A44758900E57B2E /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				4ED01DC42A44759500E57B2E /* TaskDetailView.swift */,
-			);
-			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,12 +238,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ED01DC52A44759500E57B2E /* TaskDetailView.swift in Sources */,
+				4480AD762A4B0B5100022428 /* InfoView.swift in Sources */,
+				4480AD732A4B0AFF00022428 /* CompletedTasksView.swift in Sources */,
 				4E7457512A432BF300B94003 /* TasksView.swift in Sources */,
 				4ED01DC02A44750900E57B2E /* TaskView.swift in Sources */,
+				4480AD712A4B019F00022428 /* AddButton.swift in Sources */,
 				4ED01DBA2A44745100E57B2E /* TaskViewModel.swift in Sources */,
 				4ED01DB82A44740D00E57B2E /* Task.swift in Sources */,
 				4ED01DBE2A4474F000E57B2E /* TaskEditView.swift in Sources */,
+				4480AD792A4B1A7800022428 /* DataManager.swift in Sources */,
 				4E74574F2A432BF300B94003 /* SwiftUI_MVVM_ExampleApp.swift in Sources */,
 				4ED01DBC2A44747300E57B2E /* TasksViewModel.swift in Sources */,
 			);

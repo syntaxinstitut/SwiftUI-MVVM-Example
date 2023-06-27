@@ -17,6 +17,14 @@ class TaskViewModel: ObservableObject, Identifiable {
         self.date = task.date
     }
     
+    init() {
+        self.id = UUID().uuidString
+        
+        self.title = ""
+        self.isCompleted = false
+        self.date = Date()
+    }
+    
     
     
     // MARK: - Variables
@@ -25,6 +33,6 @@ class TaskViewModel: ObservableObject, Identifiable {
     
     @Published var title: String
     @Published var isCompleted: Bool
-    @Published var date: Date?
+    @Published var date: Date
     
 }
